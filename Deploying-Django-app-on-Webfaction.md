@@ -65,3 +65,55 @@ Include /home/username/webapps/django/apache2/conf/sites-enabled/
 ```
 
 The virtual hosts definition then moved to separate single file in `sites-available` for each virtual hosts.
+
+## Django app
+I use [Buildout][1] to organize my Django project. This is how my `buildout.cfg` look alike:-
+
+```ini
+[buildout]
+parts = 
+    django
+    misc
+
+[misc]
+recipe = zc.recipe.egg
+interpreter = python
+eggs =
+    Werkzeug
+
+[django]
+recipe = djangorecipe
+version = 1.2
+download-cache = /tmp/buildout/cace
+wsgi = True
+project = ccupu
+settings = settings
+interpreter = python
+eggs =
+    django_extensions
+```
+
+[Djangorecipe][2] is used as the recipe to buildout on how to setup the actual Django project layout.
+
+and the directory layout:-
+
+```console
+$ ls ccupu
+bin  bootstrap.py  buildout.cfg  ccupu  db  develop-eggs  parts
+```
+
+The source code is hosted at Github at webfaction server, I just git clone from github url and run `bootstrap.py` to get back the identical environment as in my development machine.
+
+The next step is to add new virtual host definition to our apache config.
+
+```apacheconf
+<VirtualHost *:40333> 
+    ServerName yourdomain.com
+    DocumentRoot /home/username/django/appname/appname/media
+
+    WSGIScriptAlias / /home/username/django/appname/bin/django.wsgi
+</VirtualHost>
+```
+
+[1]:http://www.buildout.org/
+[2]:http://pypi.python.org/pypi/djangorecipe
