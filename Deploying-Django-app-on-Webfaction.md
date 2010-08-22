@@ -41,3 +41,16 @@ ErrorLog /home/k4ml/logs/user/error_django_log
 ServerLimit 2
 ```
 Important part here is the `Listen` directive where we instruct apache to listen on port number 40333. This custom port number would automatically assigned when you created this django app/environment through the control panel. The main webfaction serving front end, be it apache or nginx would proxy all request to the domain that we configured through the control panel to the process listen at this port, in our case - our own apache instance.
+
+```apacheconf
+SetEnvIf X-Forwarded-SSL on HTTPS=1
+NameVirtualHost *:40333
+<VirtualHost *:40333> 
+    ServerName yourdomain.com
+    DocumentRoot /home/username/django/appname/appname/media
+
+    WSGIScriptAlias / /home/username/django/appname/bin/django.wsgi
+</VirtualHost>
+```
+
+Finally it setup the default virtual host for this server. We would come up to the wsgi part in the next section. This kind of setup show how simple it is for Webfaction to provide every users on the shared host their own apache process running with privilege rather than the main apache process in a typical shared hosting setup.
