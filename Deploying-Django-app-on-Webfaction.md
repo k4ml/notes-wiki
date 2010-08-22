@@ -57,3 +57,11 @@ Finally it setup the default virtual host for this server. We would come up to t
 
 ### Ubuntu way
 I like how Ubuntu layout their apache installation with all virtual hosts definition in seperate file in `sites-available` directory with the active virtual host symlink from `sites-enabled` directory. This make automating setting up new virtual hosts easy, you just need to upload the complete virtual host definition file rather than have to edit the main config file. To disable any virtual host, just remove the symlink from `sites-enabled` directory.
+
+So I modified the setup a bit, create two extra directory - `sites-available` and `sites-enabled` and include it from the main config file.
+
+```apacheconf
+Include /home/username/webapps/django/apache2/conf/sites-enabled/
+```
+
+The virtual hosts definition then moved to separate single file in `sites-available` for each virtual hosts.
