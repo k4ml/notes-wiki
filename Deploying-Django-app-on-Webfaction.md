@@ -31,3 +31,13 @@ LoadModule env_module modules/mod_env.so
 ......
 ```
 First we setup the `ServerRoot` directive to this environment and then load all required modules.
+
+```apacheconf
+KeepAlive Off
+Listen 40333
+LogFormat "%{X-Forwarded-For}i %l %u %t \"%r\" %>s %b \"%{Referer}i\" \"%{User-Agent}i\"" combined
+CustomLog /home/k4ml/logs/user/access_django_log combined
+ErrorLog /home/k4ml/logs/user/error_django_log
+ServerLimit 2
+```
+Important part here is the `Listen` directive where we instruct apache to listen on port number 40333. This custom port number would automatically assigned when you created this django app/environment through the control panel. The main webfaction serving front end, be it apache or nginx would proxy all request to the domain that we configured through the control panel to the process listen at this port, in our case - our own apache instance.
