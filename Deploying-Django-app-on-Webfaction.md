@@ -54,3 +54,6 @@ NameVirtualHost *:40333
 ```
 
 Finally it setup the default virtual host for this server. We would come up to the wsgi part in the next section. This kind of setup show how simple it is for Webfaction to provide every users on the shared host their own apache process running with privilege rather than the main apache process in a typical shared hosting setup.
+
+### Ubuntu way
+I like how Ubuntu layout their apache installation with all virtual hosts definition in seperate file in `sites-available` directory with the active virtual host symlink from `sites-enabled` directory. This make automating setting up new virtual hosts easy, you just need to upload the complete virtual host definition file rather than have to edit the main config file. To disable any virtual host, just remove the symlink from `sites-enabled` directory.
