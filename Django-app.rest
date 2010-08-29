@@ -10,7 +10,7 @@ Goal
 
 Namespace package
 -------------------------------
-Use fez.djangoskel to create namespace package. 
+Use fez.djangoskel_ to create namespace package. 
 
 ```console
 $ easy install fez.djangoskel
@@ -21,5 +21,5 @@ More on [[Python Namespace]].
 
 This is Link_ to click.
 
+.. _fez.djangoskel: http://pypi.python.org/pypi/fez.djangoskel/
 .. _Link: http://www.djangoproject.com/
-
