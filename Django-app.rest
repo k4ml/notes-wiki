@@ -30,6 +30,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> customer.models
 <module 'customer.models' from '/home/kamal/python/lib/customer/models.py'>
 ```
+This make it impossible to create a module in separate physical location but still sharing same common namespace. ``setuptools`` allow us to define 
 
 This is Link_ to click.
 
