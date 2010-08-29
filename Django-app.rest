@@ -8,6 +8,29 @@ Goal
 * Easily duplicate the environment.
 * Share common top level namespace.
 
+Namespace package
+-------------------------------
+Namespace in Python is derived from physical directory structure. Example:-
+
+```console
+$ ls lib
+customer order
+$ ls lib/customer
+__init__.py models.py
+```
+
+Putting ``lib`` under ``PYTHON_PATH`` would make module customer and order available to import from Python:-
+
+```console
+$ python
+Python 2.5.2 (r252:60911, Jul 22 2009, 15:35:03) 
+[GCC 4.2.4 (Ubuntu 4.2.4-1ubuntu3)] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import customer.models
+>>> customer.models
+<module 'customer.models' from '/home/kamal/python/lib/customer/models.py'>
+```
+
 This is Link_ to click.
 
 .. _Link: http://www.djangoproject.com/
