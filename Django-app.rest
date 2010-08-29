@@ -10,7 +10,7 @@ Goal
 
 Namespace package
 -------------------------------
-Namespace in Python is derived from physical directory structure. Example:-
+Namespace in Python is derived from physical directory structure. Any directory under ``PYTHONPATH`` with at least ``__init__.py`` file is considered as a module. Example:-
 
 ```console
 $ ls lib
@@ -19,7 +19,7 @@ $ ls lib/customer
 __init__.py models.py
 ```
 
-Putting ``lib`` under ``PYTHON_PATH`` would make module customer and order available to import from Python:-
+Putting ``lib`` under ``PYTHONPATH`` would make module customer and order available to import from Python:-
 
 ```console
 $ python
