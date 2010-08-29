@@ -1,5 +1,10 @@
 My notes on creating Django app
 
+Goal
+-------
+* Reusable in other projects.
+* Easily duplicate the environment
+
 This is Link_ to click.
 
 .. _Link: http://www.djangoproject.com/
