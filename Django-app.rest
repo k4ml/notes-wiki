@@ -1,6 +1,6 @@
 My notes on creating Django app
 
-This is Link_. to click.
+This is Link_ to click.
 
-.. Link_: http://www.djangoproject.com/
+.. _Link: http://www.djangoproject.com/
 
