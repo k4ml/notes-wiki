@@ -1,3 +1,5 @@
+Django app
+=========
 My notes on creating Django app
 
 Goal
