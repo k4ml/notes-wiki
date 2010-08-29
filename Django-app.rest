@@ -5,7 +5,8 @@ My notes on creating Django app
 Goal
 -------
 * Reusable in other projects.
-* Easily duplicate the environment
+* Easily duplicate the environment.
+* Share common top level namespace.
 
 This is Link_ to click.
 
