@@ -2,5 +2,5 @@ My notes on creating Django app
 
 This is |link|_. to click.
 
-|link|_. http://www.djangoproject.com/
+.. |link|_. http://www.djangoproject.com/
 
