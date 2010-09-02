@@ -4,16 +4,23 @@ A collection of Drupal quirks I have found.
 
 Form API theme function/template can only accept one argument - form
 ---------------------------------------------------------------------------------------------------------
-To provide theme implementation, you define a `hook_theme` either in your module or theme.
+I thought I can do this:-
 
-```PHP
+```php
 function custom_theme($existing, $type, $theme, $path) {
   return array(
-    'custom_some_function' => array(
-      'arguments' => array('some_args' => NULL),
+    'my_form_id' => array(
+      'arguments' => array('node' => NULL, 'messages' => array()),
+      'template' => 'my-form-id',
     ),
   );
 }
-```
 
-You then call ``theme('custom_some_function', $some_args)`` to render the content. Theming a form output also done the same way. Here ``custom_some_function`` would be your ``form_id``.
+function custom_path_to_page($node) {
+  $messages = array();
+  return drupal_get_form('my_form_id', $node, $messages);
+}
+```
+and get both ``$node`` and ``$messages`` in my template file. Turn out I can't. Theme function (or template) for form can only accept one argument - form. For any extra data that I need to pass to the template, I have to use the value type.
+
+ http://drupal.org/node/748004
