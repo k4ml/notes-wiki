@@ -1,0 +1,19 @@
+Drupal Quirks
+===========
+A collection of Drupal quirks I have found.
+
+Form API theme function/template can only accept one argument - form
+---------------------------------------------------------------------------------------------------------
+To provide theme implementation, you define a `hook_theme` either in your module or theme.
+
+```PHP
+function custom_theme($existing, $type, $theme, $path) {
+  return array(
+    'custom_some_function' => array(
+      'arguments' => array('some_args' => NULL),
+    ),
+  );
+}
+```
+
+You then call ``theme('custom_some_function', $some_args)`` to render the content. Theming a form output also done the same way. Here ``custom_some_function`` would be your ``form_id``.
