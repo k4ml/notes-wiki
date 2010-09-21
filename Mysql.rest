@@ -1,0 +1,10 @@
+Mysql
+=====
+
+Copy table between database
+--------------------------------------------
+
+```sql
+CREATE TABLE table1(SELECT * FROM another_db.table1);
+```
+http://dev.mysql.com/doc/refman/5.0/en/ansi-diff-select-into-table.html
