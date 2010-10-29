@@ -26,3 +26,24 @@ function custom_path_to_page($node) {
 and get both ``$node`` and ``$messages`` in my template file. Turn out I can't. Theme function (or template) for form can only accept one argument - form. For any extra data that I need to pass to the template, I have to use the value type.
 
  http://drupal.org/node/748004
+
+Views embed with exposed filters
+---------------------------------------------
+You can embed Views using something like:-
+
+```php5
+<?php
+$args = array();
+views_embed_view('view_name', 'default', $args);
+```
+
+But if enable exposed filters, submitting the filter would take you to the front page because Views doesn't have any idea where it is now. The workaround:-
+
+```php5
+<?php
+$view = views_get_view('view_name');
+$view->override_path = $_GET['q'];
+$view->preview('default');
+```
+
+http://drupal.org/node/156130#comment-2108606
