@@ -23,4 +23,4 @@ function uc_cart_checkout_review() {
 ?>
 ```
 
-Payment callback registered under #submit handler through hook_form_alter of payment module.
+Payment callback registered under #submit handler through hook_form_alter of payment module using this form_id.
