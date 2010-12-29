@@ -47,3 +47,4 @@ gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-adobe-linux
 # yum install nspluginwrapper alsa-plugins-pulseaudio flash-plugin
 ```
+http://fedoraproject.org/wiki/Flash#On_32-bit_Fedora
