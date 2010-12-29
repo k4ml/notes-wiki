@@ -12,7 +12,7 @@ Install from live cd without burning it to cd:-
 http://forums.fedoraforum.org/showthread.php?t=191888
 
 ## Post installation
-
+### Trackpoint
 ```bash
 # cat - >> /etc/rc.d/rc.local
 echo -n 255 > /sys/devices/platform/i8042/serio1/sensitivity 
@@ -20,6 +20,7 @@ echo -n 200 > /sys/devices/platform/i8042/serio1/speed
 ```
 http://www.thinkwiki.org/wiki/How_to_configure_the_TrackPoint#configure-trackpoint
 
+### YUM
 ```bash
 $ wget -O timemirrorbandwidth.py "http://fedorapeople.org/gitweb?p=izhar/public_git/hack-patches.git;a=blob_plain;f=yum-plugin-timemirrorbandwidth/timemirrorbandwidth.py"
 # mv timemirrorbandwidth.py /usr/lib/yum-plugins/
@@ -30,3 +31,19 @@ enabled=1
 # yum time-mirrors --disableplugin=fastestmirror
 ```
 http://blog.kagesenshi.org/2010/12/yum-plugin-timemirrorbandwidth.html
+
+### Flash
+
+```bash
+$ wget "http://get.adobe.com/flashplayer/completion/?installer=Flash_Player_10.1_for_Linux_%28YUM%29"
+# rpm -ivh adobe-release-i386-1.0-1.noarch.rpm
+# rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-adobe-linux
+# cat /etc/yum.repos.d/adobe-linux-i386.repo 
+[adobe-linux-i386]
+name=Adobe Systems Incorporated
+baseurl=http://linuxdownload.adobe.com/linux/i386/
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-adobe-linux
+# yum install nspluginwrapper alsa-plugins-pulseaudio flash-plugin
+```
