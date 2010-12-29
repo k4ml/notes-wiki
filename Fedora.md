@@ -29,3 +29,4 @@ enabled=1
 ^D
 # yum time-mirrors --disableplugin=fastestmirror
 ```
+http://blog.kagesenshi.org/2010/12/yum-plugin-timemirrorbandwidth.html
