@@ -19,3 +19,13 @@ echo -n 255 > /sys/devices/platform/i8042/serio1/sensitivity
 echo -n 200 > /sys/devices/platform/i8042/serio1/speed
 ```
 http://www.thinkwiki.org/wiki/How_to_configure_the_TrackPoint#configure-trackpoint
+
+```bash
+$ wget -O timemirrorbandwidth.py "http://fedorapeople.org/gitweb?p=izhar/public_git/hack-patches.git;a=blob_plain;f=yum-plugin-timemirrorbandwidth/timemirrorbandwidth.py"
+# mv timemirrorbandwidth.py /usr/lib/yum-plugins/
+# cat - >> /etc/yum/pluginconf.d/timemirrorbandwidth.conf
+[main]
+enabled=1
+^D
+# yum time-mirrors --disableplugin=fastestmirror
+```
