@@ -115,6 +115,7 @@ The next step is to add new virtual host definition to our apache config.
 </VirtualHost>
 ```
 
+### Issues
 For unknown reason to me, adding `-python-home` parameter to `WSGIDaemonProcess` directive didn't work.
 
 ```apacheconf
