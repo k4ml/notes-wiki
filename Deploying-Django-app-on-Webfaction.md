@@ -126,9 +126,9 @@ For unknown reason to me, adding `-python-path` parameter to `WSGIDaemonProcess`
 </VirtualHost>
 ```
 
-So I have to add the path to Python library directory in `myproject.wsgi`:-
+So I have to add the path to Python library directory in `myproject.wsgi`.
 
-```py
+```python
 import os
 import sys
 import site
