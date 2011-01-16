@@ -115,5 +115,33 @@ The next step is to add new virtual host definition to our apache config.
 </VirtualHost>
 ```
 
+For unknown reason to me, adding `-python-home` parameter to `WSGIDaemonProcess` directive didn't work.
+
+```apacheconf
+NameVirtualHost *:49287
+<VirtualHost *:49287>
+    ServerName example.com
+    WSGIDaemonProcess django processes=5 python-path=/home/username/webapps/django:/home/username/webapps/django/lib/python2.6 threads=1
+    WSGIScriptAlias / /home/username/webapps/django/myproject.wsgi
+</VirtualHost>
+``` 
+
+So I have to add the path to Python library directory in `myproject.wsgi`:-
+
+```python
+import os
+import sys
+import site
+
+site.addsitedir('/home/username/webapps/django/lib/python2.6')
+site.addsitedir('/home/username/webapps/django')
+
+from django.core.handlers.wsgi import WSGIHandler
+print >> sys.stderr, sys.path
+
+os.environ['DJANGO_SETTINGS_MODULE'] = 'myproject.settings'
+application = WSGIHandler()
+```
+
 [1]:http://www.buildout.org/
 [2]:http://pypi.python.org/pypi/djangorecipe
