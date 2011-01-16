@@ -137,7 +137,6 @@ site.addsitedir('/home/username/webapps/django/lib/python2.6')
 site.addsitedir('/home/username/webapps/django')
 
 from django.core.handlers.wsgi import WSGIHandler
-print >> sys.stderr, sys.path
 
 os.environ['DJANGO_SETTINGS_MODULE'] = 'myproject.settings'
 application = WSGIHandler()
