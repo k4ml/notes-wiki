@@ -128,7 +128,7 @@ For unknown reason to me, adding `-python-path` parameter to `WSGIDaemonProcess`
 
 So I have to add the path to Python library directory in `myproject.wsgi`:-
 
-```Python
+```py
 import os
 import sys
 import site
