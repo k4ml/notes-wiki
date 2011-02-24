@@ -19,7 +19,7 @@ $ paster create -t django_namespace_app
 
 More on [[Python Namespace]].
 
-This is Link_ to click.
+This is Link_ to click. Just test an edit to see how it goes to friendfeed.
 
 .. _fez.djangoskel: http://pypi.python.org/pypi/fez.djangoskel/
 .. _Link: http://www.djangoproject.com/
