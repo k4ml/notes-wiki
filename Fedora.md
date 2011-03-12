@@ -53,3 +53,11 @@ http://fedoraproject.org/wiki/Flash#On_32-bit_Fedora
 ```bash
 $ sudo yum install redhat-lsb.i686
 ```
+
+### YUM
+
+Use `-C` to avoid refreshing the metadata cache.
+
+```bash
+$ yum -C search burner
+```
