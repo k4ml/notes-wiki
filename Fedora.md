@@ -32,6 +32,12 @@ enabled=1
 ```
 http://blog.kagesenshi.org/2010/12/yum-plugin-timemirrorbandwidth.html
 
+Use `-C` to avoid refreshing the metadata cache.
+
+```bash
+$ yum -C search burner
+```
+
 ### Flash
 
 ```bash
@@ -52,12 +58,4 @@ http://fedoraproject.org/wiki/Flash#On_32-bit_Fedora
 ### Google Chrome
 ```bash
 $ sudo yum install redhat-lsb.i686
-```
-
-### YUM
-
-Use `-C` to avoid refreshing the metadata cache.
-
-```bash
-$ yum -C search burner
 ```
