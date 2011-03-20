@@ -53,4 +53,7 @@ but accessing the page as `/admin/myapp/withdrawal/2/receipt/` return 404 page s
 ```
 
 The closest I found on stackoverflow:-
-http://stackoverflow.com/questions/2805701/is-there-a-way-to-get-custom-django-admin-actions-to-appear-on-the-change-view
+[[http://stackoverflow.com/questions/2805701/is-there-a-way-to-get-custom-django-admin-actions-to-appear-on-the-change-view]]
+
+## Accessing object being edited in admin change_form template
+[[http://stackoverflow.com/questions/4635548/accessing-the-object-in-a-django-admin-template]]
