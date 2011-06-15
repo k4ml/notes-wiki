@@ -21,3 +21,4 @@ http://foo-projects.org/pipermail/xfce/2007-November/022350.html
 ```bash
 setxkbmap -model jp106 -layout jp
 ```
+https://bugs.launchpad.net/ubuntu/+source/xkeyboard-config/+bug/53206
