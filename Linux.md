@@ -15,3 +15,9 @@ http://www.cyberciti.biz/tips/linux-burning-multi-session-cds-on-linux.html
 >     MiscTabPosition=GTK_POS_BOTTOM
 
 http://foo-projects.org/pipermail/xfce/2007-November/022350.html
+
+## Change keyboard layout to JP106
+
+```bash
+setxkbmap -model jp106 -layout jp
+```
