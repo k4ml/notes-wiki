@@ -23,3 +23,5 @@ Or if you don't want to use -P INPUT DROP, default drop, how about this 2 rules
 
 BTW, if the server is in DMZ and only use private IP, it is quite useless to block IP from outside, since public IP cannot reroutable to private LAN IP.5:56 pm (edited 6:04 pm)
 ```
+
+https://profiles.google.com/mypapit/posts/T87xQDqKjEn
