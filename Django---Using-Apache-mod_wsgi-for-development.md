@@ -21,7 +21,7 @@ $ ./run.py
 Running apache at 127.0.0.1:8000
 ```
 
-This setup was inspired by how Webfaction setup their local apache for users. I kept this script at https://github.com/k4ml/devserver. Problem with apache is there's no command line options that we can pass to alter how it start and find out the modules. What this script does is generate the config file and start a process using that config.
+This setup was inspired by how Webfaction setup their local apache for users. I kept this script at https://github.com/k4ml/devserver. Problem with apache is there's no command line options that we can pass to alter how it start and find out the modules. What this script does is generate the config file and start a process using that config. You have to properly setup apache/mod_wsgi first since this script assume everything already there. I started using this on Ubuntu 8.04 and then 10.04 so it simply `sudo apt-get install apache2 libapache2-mod-wsgi`.
 
 For Django and mod_wsgi the config a bit different and I don't have time yet to make the script truly generic so it can used both in PHP and Django project. So here is the modified version:-
 
@@ -144,10 +144,10 @@ website server setup.py wsgi www
 $ ls server
 run.py
 $ ls wsgi
-run.wsgi
+dev_run.wsgi
 ```
 
-It would find wsgi entry point `wsgi` directory and assume `www` as DocumentRoot where I host the media files. I then use ``django-staticfiles` app to populate www directory with static content from apps. You need to alter this line since it very specific to me:-
+It would find wsgi entry point in `wsgi` directory and assume `www` as `DocumentRoot` where I host the media files. I then use `django-staticfiles` app to populate `www` directory with static content from apps. You need to alter this line since it very specific to me:-
 
 ```apacheconf
 WSGIDaemonProcess rki python-path=/home/kamal/python/env/kedai/lib/python2.6 threads=5 display-name=rki
