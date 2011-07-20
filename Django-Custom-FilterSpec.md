@@ -1,0 +1,1 @@
+http://stackoverflow.com/questions/991926/custom-filter-in-django-admin
