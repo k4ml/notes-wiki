@@ -22,3 +22,12 @@ http://foo-projects.org/pipermail/xfce/2007-November/022350.html
 setxkbmap -model jp106 -layout jp
 ```
 https://bugs.launchpad.net/ubuntu/+source/xkeyboard-config/+bug/53206
+
+## Change locale per user
+In `$HOME/.profile`:
+
+```bash
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+export LANGUAGE=en_US.UTF-8
+```
