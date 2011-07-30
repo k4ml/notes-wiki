@@ -3,6 +3,7 @@ Asas Django
 
 Install
 --------
+
 ::
     $ easy_install Django==1.3
 
