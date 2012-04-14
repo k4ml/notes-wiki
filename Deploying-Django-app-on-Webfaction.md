@@ -64,7 +64,13 @@ So I modified the setup a bit, create two extra directory - `sites-available` an
 Include /home/username/webapps/django/apache2/conf/sites-enabled/
 ```
 
-The virtual hosts definition then moved to separate single file in `sites-available` for each virtual hosts.
+The virtual hosts definition then moved to separate single file in `sites-available` for each virtual hosts. You might git error such as:-
+
+```
+[warn] _default_ VirtualHost overlap on port 40333, the first has precedence
+```
+
+When restarting apache. Make sure you set `NameVirtualHost *:40333` in the main apache config.
 
 ## Django app
 I use [Buildout][1] to organize my Django project. This is how my `buildout.cfg` look alike:-
