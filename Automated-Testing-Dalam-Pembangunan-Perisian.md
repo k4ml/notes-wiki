@@ -7,8 +7,8 @@ Testing biasanya dilakukan secara manual dengan pengaturcara cuba menjalankan at
         return num1 + num2;
     }
 
-    print add(1, 2) # akan paparkan 3
-    print add(2, 2) # akan paparkan 4
+    print add(1, 2) . "\n" # akan paparkan 3
+    print add(2, 2) . "\n" # akan paparkan 4
 
 Andaikan aturcara diatas ditulis menggunakan bahasa PHP dan disimpan dalam fail bernama `add.php`. Untuk menguji aturcara ini, pengaturcara akan `execute` fail tersebut dan memerhatikan sama ada ia memaparkan out yang diharapkan iaitu:-
 
@@ -27,8 +27,8 @@ Di atas kita dapati aturcara tersebut memaparkan output yang kita kehendaki. Sek
         return num1 * num2;
     }
 
-    print add(1, 2) # akan paparkan 3
-    print add(2, 2) # akan paparkan 4
+    print add(1, 2) . "\n"; # akan paparkan 3
+    print add(2, 2) . "\n"; # akan paparkan 4
 
 Apabila dijalankan, kita akan dapati outputnya berlainan:-
 
