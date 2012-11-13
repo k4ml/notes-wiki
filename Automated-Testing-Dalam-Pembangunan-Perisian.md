@@ -60,3 +60,8 @@ Aah, sekarang anda sudah dapat melihat bagaimana komputer sudah mula mengambil p
 * Functional Test
 * Integration Test
 * ...
+
+## Test Framework
+...
+
+## Contoh Test mengikut bahasa pengaturcaraan
