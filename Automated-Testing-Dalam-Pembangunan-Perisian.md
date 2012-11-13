@@ -39,3 +39,18 @@ Ini bermakna program tersebut gagal dalam proses _testing_ kita. Cara _testing_ 
 
 ## Automated Testing
 Dalam proses _testing_ secara manual di atas, kita bergantung kepada tenaga manusia untuk memerhatikan semasa program dijalankan, ia menghasilkan output yang dikehendaki atau tidak. Dalam _automated testing_ kita akan menulis satu aturcara lain bagi menguji aturcara yang dibangunkan. Ini membolehkan kita untuk _delegate_ tugas-tugas menguji tersebut kepada komputer yang sudah semestinya lebih efisyen untuk melaksanakannya.
+
+Contoh kod sebelum ini boleh ditulis seperti berikut untuk <fill in>:-
+
+    function add($num1, $num2) {
+        return $num1 * $num2;
+    }
+
+    assert(add(1, 2) === 3);
+    assert(add(2, 2) === 4);
+
+Apabila dijalankan kita akan melihat output seperti berikut:-
+
+    Warning: assert(): Assertion failed in /home/rkiteratai/add.php on line 6
+
+Aah, sekarang anda sudah dapat melihat bagaimana komputer sudah mula mengambil peranan manusia dalam menguji kod aturcara.
