@@ -54,3 +54,9 @@ Apabila dijalankan kita akan melihat output seperti berikut:-
     Warning: assert(): Assertion failed in /home/rkiteratai/add.php on line 6
 
 Aah, sekarang anda sudah dapat melihat bagaimana komputer sudah mula mengambil peranan manusia dalam menguji kod aturcara.
+
+## Kategori _Test_
+* Unit Test
+* Functional Test
+* Integration Test
+* ...
