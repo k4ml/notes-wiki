@@ -14,3 +14,25 @@ Andaikan aturcara diatas ditulis menggunakan bahasa PHP dan disimpan dalam fail 
 
     3
     4
+
+Aturcara tersebut mungkin boleh dijalankan seperti berikut:-
+
+    php add.php
+    3
+    4
+
+Di atas kita dapati aturcara tersebut memaparkan output yang kita kehendaki. Sekarang kita andaikan berlaku sedikit kesilapan dalam kod tersebut. Katakan ia ditulis seperti berikut:-
+
+    function add(num1, num2) {
+        return num1 * num2;
+    }
+
+    print add(1, 2) # akan paparkan 3
+    print add(2, 2) # akan paparkan 4
+
+Apabila dijalankan, kita akan dapati outputnya berlainan:-
+
+    2
+    4
+
+Ini bermakna program tersebut gagal dalam proses _testing_ kita.
