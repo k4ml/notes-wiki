@@ -36,3 +36,6 @@ Apabila dijalankan, kita akan dapati outputnya berlainan:-
     4
 
 Ini bermakna program tersebut gagal dalam proses _testing_ kita. Cara _testing_ seperti diatas walaupun mudah untuk difahami dan diamalkan ia menjadi amat tidak efektif apabila program semakin berkembang dan kompleks. Ia juga tidak efektif kerana bergantung semata-mata kepada keupayaan mata kita untuk mengesan perbezaan pada output yang dipaparkan. Bukan mahu menidakkan keupayaan mata namun manusia sememangnya tidak sesuai untuk melakukan kerja-kerja leceh dan remeh seperti ini. Disinilah fungsi komputer supaya manusia boleh menumpukan kepada kerja-kerja yang lebih memerlukan daya fikir, intelek serta kreativiti yang tinggi.
+
+## Automated Testing
+Dalam proses _testing_ secara manual di atas, kita bergantung kepada tenaga manusia untuk memerhatikan semasa program dijalankan, ia menghasilkan output yang dikehendaki atau tidak. Dalam _automated testing_ kita akan menulis satu aturcara lain bagi menguji aturcara yang dibangunkan. Ini membolehkan kita untuk _delegate_ tugas-tugas menguji tersebut kepada komputer yang sudah semestinya lebih efisyen untuk melaksanakannya.
