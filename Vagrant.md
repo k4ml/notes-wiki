@@ -26,5 +26,53 @@ membebankan.
 Ada beberapa pilihan bergantung OS yang anda gunakan seperti msi installer 
 untuk Windows, package .deb untuk Debian/Ubuntu dan .dmg untuk pengguna MacOS.
 
+...
+
+## Contoh Penggunaan (Use case)
+Saya hendak membina sebuah _base machine_ dengan kriteria berikut:-
+
+* Menggunakan OS Ubuntu Precise 32bit.
+* Semua package dikemaskini ke versi paling terkini.
+* Package seperti postgresql, mysql dan apache2 telah siap di'install'.
+
+Bina machine pertama:-
+    
+    vagrant box add precise32 http://files.vagrantup.com/precise32.box
+    vagrant init precise32
+    vagrant up
+    vagrant ssh
+
+Kini anda sudah berada dalam machine precise32. Update Ubuntu:-
+
+    sudo apt-get update
+    sudo apt-get upgrade
+
+Install package yang dikehendaki:-
+
+    sudo apt-get build-essential apache2 postgresql mysql-server
+    exit
+
+Kini anda berada dalam mesin sebenar (fizikal). Kita akan buat copy
+untuk mesin yang pertama. Buat satu file konfigurasi asas untuk mesin yang
+kita nak pakejkan ini. Simpan sebagai Vagrantfile.pkg:-
+
+    Vagrant::Config.run do |config|
+        # Forward apache
+        config.vm.forward_port 80, 8080
+    end
+
+Dalam konfigurasi di atas kita membuat _port forwarding_ dari port 8080 di
+mesin fizikal ke port 80 di mesin maya yang bakal kita bina. Ini membolehkan
+kita akses apache di mesin maya menggunakan url seperti http://localhost:8080/
+daripada laptop atau desktop kita (mesin fizikal). Arahan berikutnya akan
+melaksanakan proses _packaging_.
+
+    vagrant package --vagrantfile Vagrantfile.pkg
+
+Setelah siap, anda akan dapati satu fail bernama `package.box`. Fail ini boleh
+dikongsikan dengan rakan-rakan yang lain dan mereka akan mendapat sebuah mesin
+maya berasaskan Ubuntu Precise 32bit yang telah siap dipasang dengan apache2,
+mysql dan postgresql.
+
 ## Rujukan
 http://vagrantup.com/
