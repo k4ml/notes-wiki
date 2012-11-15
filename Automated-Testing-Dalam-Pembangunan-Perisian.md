@@ -77,7 +77,7 @@ Aah, sekarang anda sudah dapat melihat bagaimana komputer sudah mula mengambil p
 
 ## Soalan Lazim
 ### Apa itu _assert_ ?
-_Assertion_ merupakan satu proses menguji nilai pada bahagian-bahagian tertentu aturcara bagi memastikan ia sentiasa benar sebagaimana yang diharapkan oleh pengaturcara. Kegagalan pada _assertion_ boleh dianggap sebagai kegagalan langsung aturcara tersebut dan ia mesti dibetulkan. Ini berbeza dengan _error handling_ dimana ia sesuatu yang dijangka akan berlaku dan pengaturcara hanya perlu memastikan langkah-langkah sepatutnya dilakukan untuk menangani _error_ tersebut.
+_Assertion_ merupakan satu proses menguji nilai pada bahagian-bahagian tertentu aturcara bagi memastikan ia sentiasa benar sebagaimana yang diharapkan oleh pengaturcara. Kegagalan pada _assertion_ boleh dianggap sebagai kegagalan langsung aturcara tersebut dan ia mesti dibetulkan. Ini berbeza dengan _error handling_ dimana ia sesuatu yang dijangka akan berlaku dan pengaturcara hanya perlu memastikan langkah-langkah sepatutnya dilakukan untuk menangani _error_ tersebut.[^1]
 
 ## Penulis
 Nama-nama di bawah adalah penyumbang kepada tulisan ini:-
@@ -85,3 +85,5 @@ Nama-nama di bawah adalah penyumbang kepada tulisan ini:-
 * Mohd. Kamal bin Mustafa (k4ml) - http://k4ml.github.com/
 * Mohd Amree (amree) - http://ieatbinary.com/
 * Mior Muhammad Zaki (crynobone) - http://crynobone.com/
+
+[^1]: http://en.wikipedia.org/wiki/Assertion_(computing)
