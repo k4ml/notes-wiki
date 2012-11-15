@@ -1,4 +1,3 @@
-## Pengenalan
 Tools untuk membina _virtual machine_ dengan cepat. _Virtual Machine_ yang 
 dibina adalah berasaskan VirtualBox. VirtualBox adalah sebuah mesin maya, 
 seperti komputer fizikal atau laptop yang anda biasa guna. Anda boleh membina 
