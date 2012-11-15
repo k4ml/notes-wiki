@@ -3,12 +3,14 @@ _Testing_ adalah sebahagian daripada proses pembangunan perisian komputer. Setia
 ## Manual Testing
 Testing biasanya dilakukan secara manual dengan pengaturcara cuba menjalankan aturcara atau aplikasi yang dibangunkan dan memerhatikan sama ada ia mengeluarkan output yang dikehendaki ataupun semua _features_ berfungsi sebagai mana diharapkan. Ambil dcontoh aturcara ringkas berikut:-
 
+```python
     function add(num1, num2) {
         return num1 + num2;
     }
 
     print add(1, 2) . "\n" # akan paparkan 3
     print add(2, 2) . "\n" # akan paparkan 4
+```
 
 Andaikan aturcara diatas ditulis menggunakan bahasa PHP dan disimpan dalam fail bernama `add.php`. Untuk menguji aturcara ini, pengaturcara akan `execute` fail tersebut dan memerhatikan sama ada ia memaparkan out yang diharapkan iaitu:-
 
@@ -17,18 +19,22 @@ Andaikan aturcara diatas ditulis menggunakan bahasa PHP dan disimpan dalam fail 
 
 Aturcara tersebut mungkin boleh dijalankan seperti berikut:-
 
+```bash
     php add.php
     3
     4
+```
 
 Di atas kita dapati aturcara tersebut memaparkan output yang kita kehendaki. Sekarang kita andaikan berlaku sedikit kesilapan dalam kod tersebut. Katakan ia ditulis seperti berikut:-
 
+```python
     function add(num1, num2) {
         return num1 * num2;
     }
 
     print add(1, 2) . "\n"; # akan paparkan 3
     print add(2, 2) . "\n"; # akan paparkan 4
+```
 
 Apabila dijalankan, kita akan dapati outputnya berlainan:-
 
@@ -42,12 +48,14 @@ Dalam proses _testing_ secara manual di atas, kita bergantung kepada tenaga manu
 
 Contoh kod sebelum ini boleh ditulis seperti berikut untuk <fill in>:-
 
+```php
     function add($num1, $num2) {
         return $num1 * $num2;
     }
 
     assert(add(1, 2) === 3);
     assert(add(2, 2) === 4);
+```
 
 Apabila dijalankan kita akan melihat output seperti berikut:-
 
