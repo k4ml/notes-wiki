@@ -75,6 +75,10 @@ Aah, sekarang anda sudah dapat melihat bagaimana komputer sudah mula mengambil p
 ## Contoh Test mengikut bahasa pengaturcaraan
 ...
 
+## Soalan Lazim
+### Apa itu _assert_ ?
+_Assertion_ merupakan satu proses menguji nilai pada bahagian-bahagian tertentu aturcara bagi memastikan ia sentiasa benar sebagaimana yang diharapkan oleh pengaturcara. Kegagalan pada _assertion_ boleh dianggap sebagai kegagalan langsung aturcara tersebut dan ia mesti dibetulkan. Ini berbeza dengan _error handling_ dimana ia sesuatu yang dijangka akan berlaku dan pengaturcara hanya perlu memastikan langkah-langkah sepatutnya dilakukan untuk menangani _error_ tersebut.
+
 ## Penulis
 Nama-nama di bawah adalah penyumbang kepada tulisan ini:-
 
