@@ -78,6 +78,6 @@ Aah, sekarang anda sudah dapat melihat bagaimana komputer sudah mula mengambil p
 ## Penulis
 Nama-nama di bawah adalah penyumbang kepada tulisan ini:-
 
-Mohd. Kamal bin Mustafa (k4ml) - http://k4ml.github.com/
-Mohd Amree (amree) - http://ieatbinary.com/
-Mior Muhammad Zaki (crynobone) - http://crynobone.com/
+* Mohd. Kamal bin Mustafa (k4ml) - http://k4ml.github.com/
+* Mohd Amree (amree) - http://ieatbinary.com/
+* Mior Muhammad Zaki (crynobone) - http://crynobone.com/
