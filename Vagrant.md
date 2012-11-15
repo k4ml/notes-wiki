@@ -25,3 +25,6 @@ membebankan.
 ## Install
 Ada beberapa pilihan bergantung OS yang anda gunakan seperti msi installer 
 untuk Windows, package .deb untuk Debian/Ubuntu dan .dmg untuk pengguna MacOS.
+
+## Rujukan
+http://vagrantup.com/
