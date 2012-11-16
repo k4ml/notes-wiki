@@ -68,6 +68,7 @@ Aah, sekarang anda sudah dapat melihat bagaimana komputer sudah mula mengambil p
 * Functional Test
 * Integration Test
 * Stress Test
+...
 
 ## Test Framework
 ...
