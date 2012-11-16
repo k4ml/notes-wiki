@@ -113,6 +113,7 @@ public class CalculatorTest
 _Compile_ _test code_ di atas menjadi menjadi _assembly_ (DLL) atau _executable_, dan larikan assembly tersebut menggunakan sama ada _console runner_ (unit-console.exe) atau _GUI runnner_ (nunit-gui.exe).
 
 Contoh antaramuka NUnit GUI Runner
+
 ![Contoh antaramuka NUnit GUI Runner](http://www.nunit.org/docs/2.2/img/gui-screenshot.gif)
 
 
@@ -127,5 +128,6 @@ Nama-nama di bawah adalah penyumbang kepada tulisan ini:-
 * Mohd Amree (amree) - http://ieatbinary.com/
 * Mior Muhammad Zaki (crynobone) - http://crynobone.com/
 * Irwan Azam Ahmad (ryzam) - https://github.com/ryzam
+* Ikhwan Hayat (ikhwanhayat) - https://github.com/ikhwanhayat
 
 [^1]: http://en.wikipedia.org/wiki/Assertion_(computing)
