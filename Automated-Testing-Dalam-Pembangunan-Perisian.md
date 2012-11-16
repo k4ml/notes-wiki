@@ -74,7 +74,47 @@ Aah, sekarang anda sudah dapat melihat bagaimana komputer sudah mula mengambil p
 ...
 
 ## Contoh Test mengikut bahasa pengaturcaraan
-...
+
+### Unit Test dalam C# (.NET)
+
+Dalam dunia .NET antara _unit test framework_ yang paling awal dan paling meluas digunakan ialah NUnit. Berikut adalah contoh bagaimana ia digunakan.
+
+Katakan kod yang ingin diuji adalah seperti berikut:
+
+```csharp
+class Calculator
+{
+    public int Add(int operand1, int operand2)
+    {
+        return operand1 + operand2;
+    }
+}
+```
+
+Kita boleh membuat _test fixture_ seperti ini:
+
+```csharp
+using NUnit.Framework
+
+[TestFixture]
+public class CalculatorTest
+{
+    [Test]
+    public void AddShouldReturnSum()
+    {
+        var calc = new Calculator();
+        var result = calc.Add(1, 2);
+
+        Assert.AreEqual(3, result);
+    }
+}
+```
+
+_Compile_ _test code_ di atas menjadi menjadi _assembly_ (DLL) atau _executable_, dan larikan assembly tersebut menggunakan sama ada _console runner_ (unit-console.exe) atau _GUI runnner_ (nunit-gui.exe).
+
+Contoh antaramuka NUnit GUI Runner
+![Contoh antaramuka NUnit GUI Runner](http://www.nunit.org/docs/2.2/img/gui-screenshot.gif)
+
 
 ## Soalan Lazim
 ### Apa itu _assert_ ?
