@@ -77,7 +77,7 @@ Aah, sekarang anda sudah dapat melihat bagaimana komputer sudah mula mengambil p
 
 ### Unit Test dalam C# (.NET)
 
-Dalam dunia .NET antara _unit test framework_ yang paling awal dan paling meluas digunakan ialah NUnit. Berikut adalah contoh bagaimana ia digunakan.
+Dalam dunia .NET, antara _unit testing framework_ yang paling awal dan paling meluas digunakan ialah NUnit. Berikut adalah contoh bagaimana ia digunakan.
 
 Katakan kod yang ingin diuji adalah seperti berikut:
 
@@ -88,10 +88,15 @@ class Calculator
     {
         return operand1 + operand2;
     }
+
+    public int Minus(int operand1, int operand2)
+    {
+        return operand1 + operand2;
+    }
 }
 ```
 
-Kita boleh membuat _test fixture_ seperti ini:
+Kita boleh membuat _test fixture_ seperti ini untuk mengujinya:
 
 ```csharp
 using NUnit.Framework
@@ -100,21 +105,30 @@ using NUnit.Framework
 public class CalculatorTest
 {
     [Test]
-    public void AddShouldReturnSum()
+    public void AddShouldDoSum()
     {
         var calc = new Calculator();
-        var result = calc.Add(1, 2);
+        var result = calc.Add(2, 1);
 
         Assert.AreEqual(3, result);
+    }
+
+    [Test]
+    public void MinusShouldDoSubtraction()
+    {
+        var calc = new Calculator();
+        var result = calc.Minus(2, 1);
+
+        Assert.AreEqual(1, result);
     }
 }
 ```
 
-_Compile_ _test code_ di atas menjadi menjadi _assembly_ (DLL) atau _executable_, dan larikan assembly tersebut menggunakan sama ada _console runner_ (unit-console.exe) atau _GUI runnner_ (nunit-gui.exe).
+Setelah _test code_ di atas dikompil menjadi _assembly_ (DLL) atau _executable_, larikan ia menggunakan sama ada _console runner_ (nunit-console.exe) atau _GUI runner_ (nunit-gui.exe).
 
-Contoh antaramuka NUnit GUI Runner
+Di bawah adalah contoh apa bila ia dilarikan menggunakan _GUI NUnit runner_. Kita dapat lihat bahawa _test_ untuk fungsi _Add()_ berjaya, tetapi _test_ untuk _Minus()_ gagal kerana terdapat kesilapan dalam _code_ kita.
 
-![Contoh antaramuka NUnit GUI Runner](http://www.nunit.org/docs/2.2/img/gui-screenshot.gif)
+![Contoh antaramuka NUnit GUI Runner](http://i.imgur.com/m8z2n.png)
 
 
 ## Soalan Lazim
