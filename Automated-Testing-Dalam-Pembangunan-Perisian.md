@@ -67,7 +67,7 @@ Aah, sekarang anda sudah dapat melihat bagaimana komputer sudah mula mengambil p
 * Unit Test
 * Functional Test
 * Integration Test
-* ...
+* Stress Test
 
 ## Test Framework
 ...
@@ -85,5 +85,6 @@ Nama-nama di bawah adalah penyumbang kepada tulisan ini:-
 * Mohd. Kamal bin Mustafa (k4ml) - http://k4ml.github.com/
 * Mohd Amree (amree) - http://ieatbinary.com/
 * Mior Muhammad Zaki (crynobone) - http://crynobone.com/
+* Irwan Azam Ahmad (ryzam) - https://github.com/ryzam
 
 [^1]: http://en.wikipedia.org/wiki/Assertion_(computing)
