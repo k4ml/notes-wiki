@@ -63,12 +63,13 @@ Apabila dijalankan kita akan melihat output seperti berikut:-
 
 Aah, sekarang anda sudah dapat melihat bagaimana komputer sudah mula mengambil peranan manusia dalam menguji kod aturcara.
 
+Kod automated testing boleh ditulis dengan 2 cara, sama ada selepas kod aturcara perisian siap ditulis atau sebelum kod aturcara perisian ditulis.
+
 ## Kategori _Test_
 * Unit Test
 * Functional Test
 * Integration Test
 * Stress Test
-...
 
 ## Test Framework
 ...
