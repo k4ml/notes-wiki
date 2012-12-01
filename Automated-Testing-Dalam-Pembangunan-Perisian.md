@@ -131,6 +131,72 @@ Di bawah adalah contoh apa bila ia dilarikan menggunakan _GUI NUnit runner_. Kit
 
 ![Contoh antaramuka NUnit GUI Runner](http://i.imgur.com/m8z2n.png)
 
+### Unit Test Python
+Kod untuk testing dalam Python boleh ditulis dengan bantuan module `unittest` dalam Python Standard Library. Katakan kod yang ingin diuji adalah seperti berikut:
+
+```python
+class Calculator(object):
+    def add(self, num1, num2):
+        return num1 + num2
+
+    def minus(self, num1, num2):
+        return num1 + num2
+```
+
+Simpan kod di atas dalam fail bernama `calculator.py`. Seterusnya kod untuk testing boleh ditulis seperti berikut:-
+
+```python
+import unittest
+
+from calculator import Calculator
+        
+class CalculatorTest(unittest.TestCase):
+    def test_add_should_do_sum(self):
+        calc = Calculator()
+        result = calc.add(2, 1)
+
+        self.assertEqual(result, 3)
+
+    def test_minus_should_do_substraction(self):
+        calc = Calculator()
+        result = calc.minus(2, 1)
+
+        self.assertEqual(result, 1)
+        
+if __name__ == '__main__':
+    unittest.main()
+```
+Simpan kod di atas dalam fail bernama `tests.py`. Seterusnya kita boleh jalankan test dengan melancarkan arahan berikut melalui console:-
+
+```console
+python tests.py
+```
+Anda akan dapati outputnya seperti berikut:-
+
+```console
+.F
+======================================================================
+FAIL: test_minus_should_do_substraction (__main__.CalculatorTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "tests.py", line 16, in test_minus_should_do_substraction
+    self.assertEqual(result, 1)
+AssertionError: 3 != 1
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.000s
+
+FAILED (failures=1)
+```
+Di atas kita dapati satu test gagal kerana terdapat kesilapan dalam kod kita sebelum ini. Setelah kesilapan itu dibetulkan, kita akan dapati outputnya seperti berikut:-
+
+```console
+..
+----------------------------------------------------------------------
+Ran 2 tests in 0.000s
+
+OK
+```
 
 ## Soalan Lazim
 ### Apa itu _assert_ ?
