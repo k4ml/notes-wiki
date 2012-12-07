@@ -80,6 +80,7 @@ Untuk mula menggunakan box yang baru kita hasilkan tadi, gunakan arahan berikut:
     vagrant box list
 
 Anda akan mendapat output seperti berikut:-
+
     lucid32
     precise32-base
 
