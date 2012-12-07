@@ -37,3 +37,5 @@ http://ubuntuforums.org/showthread.php?t=815362
     use=web
     web=http://ip1.dynupdate.no-ip.com/
     protocol=noip, login=username, password='password' group_or_comma_separated_host_list
+
+http://machine-cycle.blogspot.com/2010/11/update-no-ipcom-and-dyndnscom-dynamic.html
