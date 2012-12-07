@@ -32,3 +32,8 @@ export LC_ALL=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
 ```
 http://ubuntuforums.org/showthread.php?t=815362
+
+## Update No-IP using ddclient
+    use=web
+    web=http://ip1.dynupdate.no-ip.com/
+    protocol=noip, login=username, password='password' group_or_comma_separated_host_list
