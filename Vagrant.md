@@ -74,5 +74,14 @@ dikongsikan dengan rakan-rakan yang lain dan mereka akan mendapat sebuah mesin
 maya berasaskan Ubuntu Precise 32bit yang telah siap dipasang dengan apache2,
 mysql dan postgresql.
 
+Untuk mula menggunakan box yang baru kita hasilkan tadi, gunakan arahan berikut:-
+
+    vagrant box add precise32-base package.box
+    vagrant box list
+
+Anda akan mendapat output seperti berikut:-
+    lucid32
+    precise32-base
+
 ## Rujukan
 http://vagrantup.com/
