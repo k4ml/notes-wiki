@@ -84,5 +84,16 @@ Anda akan mendapat output seperti berikut:-
     lucid32
     precise32-base
 
+Bina virtual machine baru berasaskan `precise32-base`:-
+
+    vagrant init precise32-base
+
+Anda akan mendapat output seperti berikut:-
+
+    A `Vagrantfile` has been placed in this directory. You are now
+ready to `vagrant up` your first virtual environment! Please read
+the comments in the Vagrantfile as well as documentation on
+`vagrantup.com` for more information on using Vagrant.
+
 ## Rujukan
 http://vagrantup.com/
