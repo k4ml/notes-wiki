@@ -3,3 +3,5 @@ Welcome to the notes wiki!
 Just a notes.
 
 [[Linux]]
+
+[[Ubuntu]]
