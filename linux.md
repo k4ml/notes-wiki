@@ -1,4 +1,4 @@
-# Notes about Linux
+# Linux
 
 ## Burn multisession cd
 

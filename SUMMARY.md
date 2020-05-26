@@ -15,7 +15,7 @@
 * [Ubercart](ubercart.md)
 * [Fedora](fedora.md)
 * [LXC](lxc.md)
-* [Notes about Linux](linux.md)
+* [Linux](linux.md)
 * [Testing](testing/README.md)
   * [Automated-Testing-Dalam-Pembangunan-Perisian](testing/automated-testing-dalam-pembangunan-perisian.md)
 * [Vagrant](vagrant.md)
