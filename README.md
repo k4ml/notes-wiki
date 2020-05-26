@@ -6,6 +6,8 @@ Keeping a public wiki to keep notes on what I have learned is something that I h
 
 This is the new incarnation of the wiki. Started as Github Wiki, I have moved over to GitBook which provide much easier editing and organization - Github Wiki only has flat structure. Now notes are organized into folder, representing certain topic.
 
+The good thing about GitBook is that it still get sync with github repo, so I can made changes either through their web editor or my local editor and then push the changes to Github.
+
 Warning: All contents here are half-baked and just function as my brain dump. Use your own judgment to use it and I will not be responsible for any damage caused by that.
 
 Much proper thought should be on my blogs:-
