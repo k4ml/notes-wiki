@@ -1,11 +1,12 @@
-## Loading initial data (fixtures)
+# Django
 
-When running syncdb, it spitted out this error message:-
-    ValueError: No JSON object could be decoded
+## Loading initial data \(fixtures\)
+
+When running syncdb, it spitted out this error message:- ValueError: No JSON object could be decoded
 
 Turn out the error in the json initial data file:-
 
-```js
+```javascript
 [
     {
         "pk": 1,
@@ -17,12 +18,15 @@ Turn out the error in the json initial data file:-
     },
 ]
 ```
+
 Notice the trailing comma ',' after the second object ?
 
 ## Custom views / object actions in admin
-I want something like "History" button in the object edit form (change_form). Adding the button already covered in the docs but what not clear how to add my custom views that can operate on that object.
+
+I want something like "History" button in the object edit form \(change\_form\). Adding the button already covered in the docs but what not clear how to add my custom views that can operate on that object.
 
 Override method `get_urls` in `ModelAdmin` subclass.
+
 ```python
     def get_urls(self):
         urls = super(WithdrawalAdmin, self).get_urls()
@@ -52,8 +56,9 @@ but accessing the page as `/admin/myapp/withdrawal/2/receipt/` return 404 page s
         return super(WithdrawalAdmin, self).change_view(request, object_id, extra_context)
 ```
 
-The closest I found on stackoverflow:-
-[[http://stackoverflow.com/questions/2805701/is-there-a-way-to-get-custom-django-admin-actions-to-appear-on-the-change-view]]
+The closest I found on stackoverflow:- \[\[[http://stackoverflow.com/questions/2805701/is-there-a-way-to-get-custom-django-admin-actions-to-appear-on-the-change-view](http://stackoverflow.com/questions/2805701/is-there-a-way-to-get-custom-django-admin-actions-to-appear-on-the-change-view)\]\]
 
-## Accessing object being edited in admin change_form template
-[[http://stackoverflow.com/questions/4635548/accessing-the-object-in-a-django-admin-template]]
+## Accessing object being edited in admin change\_form template
+
+\[\[[http://stackoverflow.com/questions/4635548/accessing-the-object-in-a-django-admin-template](http://stackoverflow.com/questions/4635548/accessing-the-object-in-a-django-admin-template)\]\]
+
