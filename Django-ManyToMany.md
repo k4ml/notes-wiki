@@ -15,3 +15,4 @@ oi = OrderItem.objects.create(item_id=1, order=o, qty=2)
 o.save()
 oi.save()
 ```
+## Notes
