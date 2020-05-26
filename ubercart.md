@@ -1,10 +1,11 @@
-## Ubercart
+# Ubercart
+
 When switching between live/sandbox environment, make sure to change both config of
 
-  * Paypal Website Payment Standard under payment method
-  * Paypal Website Payment Pro under payment gateway.
+* Paypal Website Payment Standard under payment method
+* Paypal Website Payment Pro under payment gateway.
 
-Ubercart paypal populate payment method callback based on the existence of `$_SESSION['TOKEN']` 
+Ubercart paypal populate payment method callback based on the existence of `$_SESSION['TOKEN']`
 
 ```php
 <?php
@@ -23,4 +24,5 @@ function uc_cart_checkout_review() {
 ?>
 ```
 
-Payment callback registered under #submit handler through hook_form_alter of payment module using this form_id.
+Payment callback registered under \#submit handler through hook\_form\_alter of payment module using this form\_id.
+

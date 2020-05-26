@@ -1,3 +1,5 @@
+# Fedora
+
 Install from live cd without burning it to cd:-
 
 1. Mount downloaded iso.
@@ -6,21 +8,26 @@ Install from live cd without burning it to cd:-
 4. Add entry to /boot/grub/menu.lst and point the kernel and initrd to `/EFI/boot/vmlinuz0` and `/EFI/boot/initrd0.img`. Root device to pass is the UUID of the partition we want to boot.
 
 ### Notes:-
-* If the boot device is home partition, make sure to copy iso content to the root of the partition, not to /home/userdir or something.
-* Need to use UUID for root device, otherwise would get error `/dev/sdaX already mounted'.
 
-http://forums.fedoraforum.org/showthread.php?t=191888
+* If the boot device is home partition, make sure to copy iso content to the root of the partition, not to /home/userdir or something.
+* Need to use UUID for root device, otherwise would get error \`/dev/sdaX already mounted'.
+
+[http://forums.fedoraforum.org/showthread.php?t=191888](http://forums.fedoraforum.org/showthread.php?t=191888)
 
 ## Post installation
+
 ### Trackpoint
+
 ```bash
 # cat - >> /etc/rc.d/rc.local
 echo -n 255 > /sys/devices/platform/i8042/serio1/sensitivity 
 echo -n 200 > /sys/devices/platform/i8042/serio1/speed
 ```
-http://www.thinkwiki.org/wiki/How_to_configure_the_TrackPoint#configure-trackpoint
+
+[http://www.thinkwiki.org/wiki/How\_to\_configure\_the\_TrackPoint\#configure-trackpoint](http://www.thinkwiki.org/wiki/How_to_configure_the_TrackPoint#configure-trackpoint)
 
 ### YUM
+
 ```bash
 $ wget -O timemirrorbandwidth.py "http://fedorapeople.org/gitweb?p=izhar/public_git/hack-patches.git;a=blob_plain;f=yum-plugin-timemirrorbandwidth/timemirrorbandwidth.py"
 # mv timemirrorbandwidth.py /usr/lib/yum-plugins/
@@ -30,7 +37,8 @@ enabled=1
 ^D
 # yum time-mirrors --disableplugin=fastestmirror
 ```
-http://blog.kagesenshi.org/2010/12/yum-plugin-timemirrorbandwidth.html
+
+[http://blog.kagesenshi.org/2010/12/yum-plugin-timemirrorbandwidth.html](http://blog.kagesenshi.org/2010/12/yum-plugin-timemirrorbandwidth.html)
 
 Use `-C` to avoid refreshing the metadata cache.
 
@@ -53,9 +61,12 @@ gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-adobe-linux
 # yum install nspluginwrapper alsa-plugins-pulseaudio flash-plugin
 ```
-http://fedoraproject.org/wiki/Flash#On_32-bit_Fedora
+
+[http://fedoraproject.org/wiki/Flash\#On\_32-bit\_Fedora](http://fedoraproject.org/wiki/Flash#On_32-bit_Fedora)
 
 ### Google Chrome
+
 ```bash
 $ sudo yum install redhat-lsb.i686
 ```
+

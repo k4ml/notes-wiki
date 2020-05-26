@@ -1,8 +1,10 @@
-This is a note on how I setup local development environment using Apache2 and mod_wsgi. Using Django built-in `runserver` suck at 1 thing. If I have 1 browser window opening the page and try to open another page in Incognito mode (I'm using Chrome), the one in Incognito mode would failed to open until I click some link in the first window and let it load first.
+# Django---Using-Apache-mod\_wsgi-for-development
+
+This is a note on how I setup local development environment using Apache2 and mod\_wsgi. Using Django built-in `runserver` suck at 1 thing. If I have 1 browser window opening the page and try to open another page in Incognito mode \(I'm using Chrome\), the one in Incognito mode would failed to open until I click some link in the first window and let it load first.
 
 Django built-in dev server is known to be single thread so it could be the reason. I've try some other development server that claimed to be multi-threaded but still having this problem at certain time. It didn't happen all the time but when it did, it really turned me off. Just recently I tried gunicorn hoping it would not have the same problem but it still does.
 
-We use apache and mod_wsgi in production so using it for development still a good thing, right ? What make most of us turn to development server for development is the hassle to setup the apache config for every new project. I've been using a technique to start new apache process for every project I'm working on for PHP in the past. Basically all my php project would have the following structure:-
+We use apache and mod\_wsgi in production so using it for development still a good thing, right ? What make most of us turn to development server for development is the hassle to setup the apache config for every new project. I've been using a technique to start new apache process for every project I'm working on for PHP in the past. Basically all my php project would have the following structure:-
 
 ```bash
 $ ls website.com
@@ -13,7 +15,7 @@ $ ls server
 run.py
 ```
 
-`www` is the `DocumentRoot` and `run.py` is just a python script that start new apache2 process (default at port 8000) and set `www` as `DocumentRoot`. So everytime I want to start development on website.com, I just did:-
+`www` is the `DocumentRoot` and `run.py` is just a python script that start new apache2 process \(default at port 8000\) and set `www` as `DocumentRoot`. So everytime I want to start development on website.com, I just did:-
 
 ```bash
 $ cd website.com/server
@@ -21,9 +23,9 @@ $ ./run.py
 Running apache at 127.0.0.1:8000
 ```
 
-This setup was inspired by how Webfaction setup their local apache for users. I kept this script at https://github.com/k4ml/devserver. Problem with apache is there's no command line options that we can pass to alter how it start and find out the modules. What this script does is generate the config file and start a process using that config. You have to properly setup apache/mod_wsgi first since this script assume everything already there. I started using this on Ubuntu 8.04 and then 10.04 so it simply `sudo apt-get install apache2 libapache2-mod-wsgi`.
+This setup was inspired by how Webfaction setup their local apache for users. I kept this script at [https://github.com/k4ml/devserver](https://github.com/k4ml/devserver). Problem with apache is there's no command line options that we can pass to alter how it start and find out the modules. What this script does is generate the config file and start a process using that config. You have to properly setup apache/mod\_wsgi first since this script assume everything already there. I started using this on Ubuntu 8.04 and then 10.04 so it simply `sudo apt-get install apache2 libapache2-mod-wsgi`.
 
-For Django and mod_wsgi the config a bit different and I don't have time yet to make the script truly generic so it can used both in PHP and Django project. So here is the modified version:-
+For Django and mod\_wsgi the config a bit different and I don't have time yet to make the script truly generic so it can used both in PHP and Django project. So here is the modified version:-
 
 ```bash
 #!/usr/bin/env python
@@ -84,7 +86,7 @@ CustomLog $server_root/access_log combined
 ErrorLog ${server_root}/error_log
 
 ServerName localhost
- 
+
 PidFile ${server_root}/apache2.pid
 
 DirectoryIndex index.html
@@ -149,6 +151,7 @@ dev_run.wsgi
 
 It would find wsgi entry point in `wsgi` directory and assume `www` as `DocumentRoot` where I host the media files. I then use `django-staticfiles` app to populate `www` directory with static content from apps. You need to alter this line since it very specific to me:-
 
-```apacheconf
+```text
 WSGIDaemonProcess rki python-path=/home/kamal/python/env/kedai/lib/python2.6 threads=5 display-name=rki
 ```
+
