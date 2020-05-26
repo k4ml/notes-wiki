@@ -8,7 +8,7 @@ This is the new incarnation of the wiki. Started as Github Wiki, I have moved ov
 
 The good thing about GitBook is that it still get sync with github repo, so I can made changes either through their web editor or my local editor and then push the changes to Github.
 
-I am moved to start using GitBook for my wiki after I bumped into [https://www.aizatto.com/](https://www.aizatto.com/).
+I am moved to start using GitBook for my wiki after I bumped into [https://www.aizatto.com/](https://www.aizatto.com/). Ihave used the old GitBook before but then not following it's development after they're going with new version and retired the old one.
 
 Warning: All contents here are half-baked and just function as my brain dump. Use your own judgment to use it and I will not be responsible for any damage caused by that.
 
