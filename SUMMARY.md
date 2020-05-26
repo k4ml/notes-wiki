@@ -19,7 +19,6 @@
   * [LXC](linux/lxc.md)
 * [Testing](testing/README.md)
   * [Automated-Testing-Dalam-Pembangunan-Perisian](testing/automated-testing-dalam-pembangunan-perisian.md)
-* [Intro](flask-sqlalchemy.md)
 * [TLS](tls/README.md)
   * [Get SHA-1 fingerprint from ssl cert](tls/ssl.md)
 * [Misc](misc.md)
