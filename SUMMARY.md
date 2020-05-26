@@ -20,7 +20,7 @@
   * [Automated-Testing-Dalam-Pembangunan-Perisian](testing/automated-testing-dalam-pembangunan-perisian.md)
 * [Vagrant](vagrant.md)
 * [Intro](flask-sqlalchemy.md)
-* [TLS](tls.md)
-* [Get SHA-1 fingerprint from ssl cert](ssl.md)
+* [TLS](tls/README.md)
+  * [Get SHA-1 fingerprint from ssl cert](tls/ssl.md)
 * [Misc](misc.md)
 
