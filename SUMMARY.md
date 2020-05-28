@@ -22,4 +22,6 @@
 * [TLS](tls/README.md)
   * [Get SHA-1 fingerprint from ssl cert](tls/ssl.md)
 * [Misc](misc.md)
+* [Web](web/README.md)
+  * [SPA vs Traditional Architecture](web/spa-vs-traditional-architecture.md)
 
