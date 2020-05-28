@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Initial page](README.md)
+* [Main](README.md)
 * [Django](django/README.md)
   * [Deploying-Django-app-on-Webfaction](django/deploying-django-app-on-webfaction.md)
   * [Django---Using-Apache-mod\_wsgi-for-development](django/django---using-apache-mod_wsgi-for-development.md)
