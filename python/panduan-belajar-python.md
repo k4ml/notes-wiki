@@ -10,5 +10,13 @@ Jadi nota ini adalah untuk mereka yang mahu belajar dan bukannya diajar.
 
 ### Pusat Maklumat
 
-Sebelum kita pergi jauh, kita perlu tahu dahulu di mana asas atau tempat asal kerana kalau tersesat, sekurang-kurangnya kita tahu tempat kembali. Untuk Python, asasnya sudah tentu laman rasmi projek tersebut iaitu www.python.org.
+Sebelum kita pergi jauh, kita perlu tahu dahulu di mana asas atau tempat asal kerana kalau tersesat, sekurang-kurangnya kita tahu tempat kembali. Untuk Python, asasnya sudah tentu laman rasmi projek tersebut iaitu [www.python.org](https://www.python.org/).
+
+Di laman rasmi Python, kita dapat tahu perkembangan terkini berkaitan Python itu sendiri, seperti versi terkini yang telah diterbitkan, senarai komuniti, tools dan aplikasi yang dibangukan menggunakan Python. Kesemua maklumat ini akan banyak membantu proses belajar kita nanti.
+
+### Komuniti
+
+Belajar lebih seronok jika tidak bersendirian, atau sekurang-kurangnya kita tahu ada orang lain yang juga sama macam kita. Itu pentingya komuniti. Menariknya, dalam dunia maya ini, komuniti ada di mana-mana dan tiada kekangan geografi untuk kita turut sama menyertai.
+
+Lama python.org telah [menyenaraikan beberapa komuniti utama](https://www.python.org/community/) yang diwujudkan untuk menyokong mereka yang ingin mendalami Python.
 
