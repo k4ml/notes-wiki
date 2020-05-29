@@ -20,3 +20,7 @@ Belajar lebih seronok jika tidak bersendirian, atau sekurang-kurangnya kita tahu
 
 Lama python.org telah [menyenaraikan beberapa komuniti utama](https://www.python.org/community/) yang diwujudkan untuk menyokong mereka yang ingin mendalami Python.
 
+### Tutorial Asas
+
+Nak belajar apa pun, kita mesti nak tahu asas dulu kan? Tiada rahsia istimewa, apa yang saya biasa lakukan hanyalah cuba Google kata kunci seperti "python basic tutorial" atau "python build website tutorial" untuk lebih spesifik dengan apa yang kita mahu lakukan. Anda boleh cuba dengan kata kunci berkaitan apa yang ingin dipelajari atau apa yang anda hendak lakukan mengggunakan Python.
+
