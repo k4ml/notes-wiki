@@ -24,3 +24,7 @@ Lama python.org telah [menyenaraikan beberapa komuniti utama](https://www.python
 
 Nak belajar apa pun, kita mesti nak tahu asas dulu kan? Tiada rahsia istimewa, apa yang saya biasa lakukan hanyalah cuba Google kata kunci seperti "python basic tutorial" atau "python build website tutorial" untuk lebih spesifik dengan apa yang kita mahu lakukan. Anda boleh cuba dengan kata kunci berkaitan apa yang ingin dipelajari atau apa yang anda hendak lakukan mengggunakan Python.
 
+### Belajar Bahasa Inggeris
+
+Ok, ini mungkin klise tapi terpaksa cakap juga. Hakikatnya, banyak maklumat berguna di luar sana masih dalam BI. Jadi nak tak nak memang perlua kuasai BI. Kuasai tak bermaksud boleh speaking lancar mcm mat salleh. Cukup kalau boleh faham ataupun agak-agak maksud yang nak disampaikan. 
+
