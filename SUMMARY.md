@@ -8,6 +8,7 @@
   * [Misc notes](django/django-custom-filterspec.md)
   * [Async](django/async.md)
 * [Python](python/README.md)
+  * [Panduan Belajar Python](python/panduan-belajar-python.md)
   * [Python-Packaging](python/packaging.md)
   * [Python-namespace](python/namespace.md)
 * [Firewall](firewall.md)
