@@ -49,3 +49,21 @@ Berikut antara laman web yang menyediakan pelbagai maklumat berguna berkaitan Py
 
  - [Fullstack Python](https://www.fullstackpython.com/)
  - [Real Python](https://realpython.com/)
+
+### Kaedah Belajar
+
+Saya bahagikan kaedah belajar Python kepada 2 cara utama iaitu apa yang saya namakan cara konvensional dan cara projek.
+
+#### Konvensional
+
+Ini adalah kaedah seperti yang kita belajar kat sekolah. Contohnya kita belajar asas berkaitan matematik dan kemudian kita akan diberi set-set ujian bagi menguji kefahaman kita.
+
+Melalui kaedah ini, biasanya apa yang kita buat adalah dengan mempelajari sintaks-sintaks asas bahasa Python. Kita belajar apa itu loop, conditional statement, sequence dan sebagainya. Seterusnya kita akan diberi beberapa permasalahan kecil untuk diselesaikan yang perlu ditulis menggunakan komponen-komponen asas yang kita telah pelajari tadi.
+
+#### Projek
+
+Dalam kaedah projek, kita akan fikirkan dulu apa yang kita nak bina. Contohnya ada orang dia nak bina laman web menggunakan Python, ada yang nak bina automasi untuk rumah dia - contohnya menyalakan lampu di rumah dengan arahan suara dan pelbagai bentuk projek lagi.
+
+Setelah memutuskan apa yang nak dibina, kita akan bergerak ke belakang (move backward) dan mula mencari apakah yang perlu digunakan dalam Python dalam mencapai tujuan akhir projek kita.
+
+Secara peribadi saya lebih suka kaedah projek berbanding kaedah konvesional kerana ia lebih menyeronokkan dan kita dapat melihat hasil pembelajaran dengan lebih jelas.
