@@ -18,7 +18,7 @@ Di laman rasmi Python, kita dapat tahu perkembangan terkini berkaitan Python itu
 
 Belajar lebih seronok jika tidak bersendirian, atau sekurang-kurangnya kita tahu ada orang lain yang juga sama macam kita. Itu pentingya komuniti. Menariknya, dalam dunia maya ini, komuniti ada di mana-mana dan tiada kekangan geografi untuk kita turut sama menyertai.
 
-Lama python.org telah [menyenaraikan beberapa komuniti utama](https://www.python.org/community/) yang diwujudkan untuk menyokong mereka yang ingin mendalami Python.
+Laman python.org telah [menyenaraikan beberapa komuniti utama](https://www.python.org/community/) yang diwujudkan untuk menyokong mereka yang ingin mendalami Python.
 
 ### Tutorial Asas
 
@@ -26,5 +26,5 @@ Nak belajar apa pun, kita mesti nak tahu asas dulu kan? Tiada rahsia istimewa, a
 
 ### Belajar Bahasa Inggeris
 
-Ok, ini mungkin klise tapi terpaksa cakap juga. Hakikatnya, banyak maklumat berguna di luar sana masih dalam BI. Jadi nak tak nak memang perlua kuasai BI. Kuasai tak bermaksud boleh speaking lancar mcm mat salleh. Cukup kalau boleh faham ataupun agak-agak maksud yang nak disampaikan. 
+Ok, ini mungkin klise tapi terpaksa cakap juga. Hakikatnya, banyak maklumat berguna di luar sana masih dalam BI. Jadi nak tak nak memang perlu kuasai BI. Kuasai tak bermaksud boleh speaking lancar mcm mat salleh. Cukup kalau boleh faham ataupun agak-agak maksud yang nak disampaikan.
 
