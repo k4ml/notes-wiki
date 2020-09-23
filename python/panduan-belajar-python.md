@@ -28,3 +28,24 @@ Nak belajar apa pun, kita mesti nak tahu asas dulu kan? Tiada rahsia istimewa, a
 
 Ok, ini mungkin klise tapi terpaksa cakap juga. Hakikatnya, banyak maklumat berguna di luar sana masih dalam BI. Jadi nak tak nak memang perlu kuasai BI. Kuasai tak bermaksud boleh speaking lancar mcm mat salleh. Cukup kalau boleh faham ataupun agak-agak maksud yang nak disampaikan.
 
+### Sumber Maklumat
+
+Sumber maklumat berkaitan Python kita boleh bahagikan kepada beberapa kategori seperti:-
+
+ - Buku (E-book atau fizikal)
+ - Laman web
+ - Video
+
+#### Buku
+
+Berikut disenaraikan buku-buku yang dirasakan bagus untuk permulaan:-
+
+ - [Learn Python The Hard Way](https://shop.learncodethehardway.org/access/buy/9/) oleh Zed Shaw. Buku ini pada asalnya diterbit secara percuma oleh penulis tetapi sekarang hanya boleh didapati secara berbayar. Ia turut menyediakan tutorial dalam bentuk video dan contoh-contoh yang boleh dicuba secara online.
+ - [Head First Python](https://www.oreilly.com/library/view/head-first-python/9781491919521/)
+
+#### Laman web
+
+Berikut antara laman web yang menyediakan pelbagai maklumat berguna berkaitan Python:-
+
+ - [Fullstack Python](https://www.fullstackpython.com/)
+ - [Real Python](https://realpython.com/)
