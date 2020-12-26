@@ -49,7 +49,9 @@ Berikut antara laman web yang menyediakan pelbagai maklumat berguna berkaitan Py
 
 * [Fullstack Python](https://www.fullstackpython.com/)
 * [Real Python](https://realpython.com/)
-* [Repl.it](https://repl.it/) - Adalah sebuah laman web yang membolehkan anda menulis aturcara dalam pelbagai bahasa dan menjalankannya terus daripada aplikasi pelayar web. Maksudnya anda tidak perlu memasang python pun pada komputer anda.
+* [Repl.it](https://repl.it/) - Adalah sebuah laman web yang membolehkan anda menulis aturcara dalam pelbagai bahasa dan menjalankannya terus daripada aplikasi pelayar web. Maksudnya anda tidak perlu memasang python pun pada komputer anda. Ini adalah contoh program python di repl.it - [https://repl.it/@k4ml/koditi\#main.py](https://repl.it/@k4ml/koditi#main.py).
+
+
 
 ## Kaedah Belajar
 
