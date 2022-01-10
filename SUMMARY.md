@@ -1,9 +1,10 @@
 # Table of contents
 
-* [Main](README.md)
+* [SQL](README.md)
+* [Main](<README (1).md>)
 * [Django](django/README.md)
   * [Deploying-Django-app-on-Webfaction](django/deploying-django-app-on-webfaction.md)
-  * [Django---Using-Apache-mod\_wsgi-for-development](django/django---using-apache-mod_wsgi-for-development.md)
+  * [Django---Using-Apache-mod\_wsgi-for-development](django/django---using-apache-mod\_wsgi-for-development.md)
   * [Django-ManyToMany](django/django-manytomany.md)
   * [Misc notes](django/django-custom-filterspec.md)
   * [Async](django/async.md)
@@ -28,5 +29,4 @@
 
 ## JomWeb
 
-* [Sejarah Ringkas Container \(termasuk Docker\) daripada tahun 1970](jomweb/sejarah-ringkas-container-termasuk-docker-daripada-tahun-1970.md)
-
+* [Sejarah Ringkas Container (termasuk Docker) daripada tahun 1970](jomweb/sejarah-ringkas-container-termasuk-docker-daripada-tahun-1970.md)

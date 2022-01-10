@@ -1,26 +1,43 @@
-# Main
+# SQL
 
-View on [https://notes.koditi.my/](https://notes.koditi.my/).
+Rule 1: Always use CTEs
 
-Keeping a public wiki to keep notes on what I have learned is something that I have been doing since at university. My old wiki is currently in this [mercurial repo](https://hg.sr.ht/~k4ml/k4ml_wiki/browse). It originally written with dokuwiki.
+When writing a complex query it’s a good idea to break it down into smaller components. As tempting as it might be to solve the query in one step don’t.
 
-This is the new incarnation of the wiki. Started as Github Wiki, I have moved over to GitBook which provide much easier editing and organization - Github Wiki only has flat structure. Now notes are organized into folder, representing certain topic.
+CTEs make your query easier to write and maintain in the future.
 
-The good thing about GitBook is that it still get sync with github repo, so I can made changes either through their web editor or my local editor and then push the changes to Github.
+Rule 2: Keep CTEs small and single purpose
 
-I am moved to start using GitBook for my wiki after I bumped into [https://www.aizatto.com/](https://www.aizatto.com/). Ihave used the old GitBook before but then not following it's development after they're going with new version and retired the old one.
+Your CTE needs to be an encapsulated logical component that helps you build your final query easier. It shouldn't try to do too much.
 
-Warning: All contents here are half-baked and just function as my brain dump. Use your own judgment to use it and I will not be responsible for any damage caused by that.
+Rule 3: Don’t repeat yourself (DRY)
 
-Much proper thought should be on my blogs:-
+If you find yourself doing the same joins in a query, abstract it to a CTE.
 
-* [https://kamal.koditi.my/](https://kamal.koditi.my/) - personal blog
-* [https://dev.to/k4ml](https://dev.to/k4ml)
-* [https://blog.xoxzo.com/author/kamal-mustafa.html](https://blog.xoxzo.com/author/kamal-mustafa.html) - My company's blog
+If you find yourself doing the same joins in multiple queries, abstract them to a view.
 
-### Importing from Github wiki
+Rule 4: Don’t tangle dependency chains
 
-It's not directly supported yet but since the wiki is also a git repo, you can push it to a new repo which gitbook can import later.
+In modern data warehouses it's common to build tables on top of other tables in multiple layers of dependency.
 
-[https://docs.gitbook.com/integrations/github/content-configuration\#summary](https://docs.gitbook.com/integrations/github/content-configuration#summary)
+Make sure your joins are at the same layer otherwise your dependency graph will look like spaghetti code.
 
+Rule 5: Reduce your data before joining
+
+Modern data warehouses are fast but that doesn’t mean you shouldn’t try to improve query performance.
+
+If you only need six months of data, pre-filter that in a CTE first before your final select.
+
+Rule 6: Only select the columns you need
+
+It’s tempting to do SELECT \* everywhere but modern cloud warehouses use columnar storage so the more columns you choose the slower, more expensive your query will be.
+
+Rule 7: Expect the unexpected
+
+From NULLs, to missing data, duplicate rows and random values, real world data is messy. A well-written query is robust enough to handle many of these cases without crashing or giving inaccurate results.
+
+Rule 8: Start with a left join
+
+Real world data is messy. You never know if the column you’re joining on is fully represented in both tables. An inner join will filter out the non-matching rows and they could be important.
+
+[https://mobile.twitter.com/ergestx/status/1479811885377765383](https://mobile.twitter.com/ergestx/status/1479811885377765383)
