@@ -1,7 +1,7 @@
 # Table of contents
 
-* [SQL](README.md)
-* [Main](<README (1).md>)
+* [Main](README.md)
+* [SQL](SQL.md)
 * [Django](django/README.md)
   * [Deploying-Django-app-on-Webfaction](django/deploying-django-app-on-webfaction.md)
   * [Django---Using-Apache-mod\_wsgi-for-development](django/django---using-apache-mod\_wsgi-for-development.md)
