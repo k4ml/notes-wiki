@@ -6,7 +6,7 @@ description: >-
 
 # Missing Notes for Professional Developers
 
-### Correct way to generate migrations
+## Correct way to generate migrations
 
 * Start with new empty database.
 * git checkout main
@@ -15,7 +15,7 @@ description: >-
 * delete existing migrations if you already created before - each branch should only have one migrations
 * create new migrations from your models changes
 
-### How to test migrations?
+## How to test migrations?
 
-### Always use intermediate table for M2M relationship
+## Always use intermediate table for M2M relationship
 
