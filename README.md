@@ -10,7 +10,7 @@ The good thing about GitBook is that it still get sync with github repo, so I ca
 
 I am moved to start using GitBook for my wiki after I bumped into [https://www.aizatto.com/](https://www.aizatto.com/). Ihave used the old GitBook before but then not following it's development after they're going with new version and retired the old one.
 
-Another inspiration of notes taking is from [Alex Kehayias's Zettelkasten](https://notes.alexkehayias.com/zettelkasten/).
+Another inspiration of notes taking is from [Alex Kehayias's Zettelkasten](https://notes.alexkehayias.com/zettelkasten/) and lyz's [blue book](https://lyz-code.github.io/blue-book/).
 
 Warning: All contents here are half-baked and just function as my brain dump. Use your own judgment to use it and I will not be responsible for any damage caused by that.
 
@@ -24,8 +24,7 @@ Much proper thought should be on my blogs:-
 
 It's not directly supported yet but since the wiki is also a git repo, you can push it to a new repo which gitbook can import later.
 
-[https://docs.gitbook.com/integrations/github/content-configuration#summary](https://docs.gitbook.com/integrations/github/content-configuration#summary)
-[https://docs.gitbook.com/integrations/github/content-configuration\#summary](https://docs.gitbook.com/integrations/github/content-configuration#summary)
+[https://docs.gitbook.com/integrations/github/content-configuration#summary](https://docs.gitbook.com/integrations/github/content-configuration#summary) [https://docs.gitbook.com/integrations/github/content-configuration#summary](https://docs.gitbook.com/integrations/github/content-configuration#summary)
 
 Another inspiration:-
 
