@@ -18,6 +18,7 @@ Much proper thought should be on my blogs:-
 
 * [https://kamal.koditi.my/](https://kamal.koditi.my/) - personal blog
 * [https://dev.to/k4ml](https://dev.to/k4ml)
+* [https://grep.koditi.my](https://grep.koditi.my) - Another tech blog
 * [https://blog.xoxzo.com/author/kamal-mustafa.html](https://blog.xoxzo.com/author/kamal-mustafa.html) - My company's blog
 
 ### Importing from Github wiki
